@@ -14,7 +14,10 @@
         <h1 class="poster__titulo1">V</h1>
         <h1 class="poster__titulo2">JORNADAS DE SEGURIDAD INFORMÁTICA</h1>
         <h2 class="poster__lugar-fechas">Barcelona, 12-14 diciembre 2024</h2>
-        <a class="poster__inscripcion" href="http://">Inscríbete</a>
+        <!-- <a class="poster__inscripcion" href="http://">Inscríbete</a> -->
+        <div class="poster__inscripcion">
+          <button type="button" class="btn btn-primary">Inscríbete</button>
+        </div>
         <img
           class="poster__cartel"
           src="./assets/images/cartel.png"
@@ -25,16 +28,34 @@
           src="./assets/images/logo.png?width=350"
           alt="Universitat Oberta de Catalunya"
         />
-        <ul class="poster__actividades">
-          <li>Comunidad</li>
-          <li>Networking</li>
-          <li>Fiesta</li>
-          <li>Stands</li>
-        </ul>
+        <div class="poster__actividades">
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-secondary">
+              <i class="fa-solid fa-people-group"></i> Comunidad
+            </li>
+            <li class="list-group-item list-group-item-secondary">
+              <i class="fa-solid fa-comments"></i> Networking
+            </li>
+            <li class="list-group-item list-group-item-secondary">
+              <i class="fa-solid fa-champagne-glasses"></i> Fiesta
+            </li>
+            <li class="list-group-item list-group-item-secondary">
+              <i class="fa-solid fa-house-flag"></i> Stands
+            </li>
+          </ul>
+        </div>
         <div class="poster__programa">
-          <div>22 Poenentes</div>
-          <div>7 Talleres</div>
-          <div>Concurso de programación</div>
+          <ul class="list-group list-group-horizontal justify-content-evenly">
+            <li class="list-group-item">
+              22 Ponentes <i class="fa-regular fa-user"></i>
+            </li>
+            <li class="list-group-item">
+              7 Talleres <i class="fa-solid fa-graduation-cap"></i>
+            </li>
+            <li class="list-group-item">
+              Concurso de programación <i class="fa-solid fa-trophy"></i>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
