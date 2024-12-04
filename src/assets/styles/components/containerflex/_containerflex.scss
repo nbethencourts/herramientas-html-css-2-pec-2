@@ -1,0 +1,17 @@
+.containerflex {
+  container-type: inline-size;
+  container-name: containerflex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+}
+.containerflex__card {
+  width: 18rem;
+  @container containerflex (max-width: #{$width-1}) {
+    flex-basis: 40%;
+  }
+}
