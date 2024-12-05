@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>Contacto</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <h1 class="text-center">Contacto</h1>
+    <h2 class="text-center">¿Tienes preguntas? ¿Comentarios?</h2>
+    <form name="contacto" data-netlify="true">
+      <div class="row g-3">
+        <div class="col">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nombre"
+              aria-label="Nombre"
+              id="nombre"
+              required
+            />
+            <label for="nombre"><i class="fa-solid fa-user"></i> Nombre</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Apellidos"
+              id="apellidos"
+              aria-label="Apellidos"
+              required
+            />
+            <label for="apellidos"
+              ><i class="fa-regular fa-address-card"></i> Apellidos</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col">
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="correo"
+              placeholder="nombre@uoc.org"
+              required
+            />
+            <label for="correo"
+              ><i class="fa-regular fa-envelope"></i> Correo electrónico</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col">
+          <div class="form-floating mb-3">
+            <select class="form-select" id="personal" aria-label="Personal">
+              <option selected value="estudiante">Estudiante</option>
+              <option value="docente">Docente</option>
+              <option value="externo">Externo</option>
+            </select>
+            <label for="personal"
+              ><i class="fa-solid fa-user-tie"></i> Selecciona el tipo de
+              personal</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col">
+          <div class="form-floating mb-3">
+            <textarea
+              class="form-control"
+              placeholder="Deja un comentario"
+              id="comentarios"
+              style="height: 100px"
+              required
+            ></textarea>
+            <label for="comentarios"
+              ><i class="fa-regular fa-comment"></i> Comentarios</label
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="terminos"
+            />
+            <label class="form-check-label" for="terminos">
+              He leído y acepto los <a href="#">términos y condiciones</a> y la
+              <a href="#">política de privacidad</a>.
+            </label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <div class="row">
+      <h2>Ubicación</h2>
+      <p>
+        <i class="fa-solid fa-location-dot"></i> Rambla del Poblenou, 154-156
+      </p>
+      <p>08018 Barcelona</p>
+    </div>
+    <div class="row">
+      <h2>Mapa</h2>
+      <iframe
+        class="map__iframe"
+        width="600"
+        height="450"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=2.1851881%2C41.4012566%2C2.2051881%2C41.4112566&layer=mapnik&marker=41.4062566%2C2.1951881"
+        style="border: 1px solid black"
+      ></iframe>
+
+      <br />
+
+      <a
+        class="map__link"
+        href="https://www.openstreetmap.org/?mlat=41.4062566&mlon=2.1951881#map=15/41.4063/2.1952"
+        target="_blank"
+      >
+        <i class="fa-solid fa-magnifying-glass-plus"></i> Ampliar
+      </a>
+    </div>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>
