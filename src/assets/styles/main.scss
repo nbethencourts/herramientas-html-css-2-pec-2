@@ -8,10 +8,9 @@
  */
 
 @import "variables";
-@import "bootstrap/scss/bootstrap";
-@import "components/poster/poster";
+// @import "components/poster/poster";
 @import "components/footer/footer";
-@import "components/header/header";
+// @import "components/header/header";
 @import "components/imagefluid/imagefluid";
 @import "components/containerflex/containerflex";
 
@@ -21,6 +20,7 @@
  * see commented examples below
  */
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
+// @import "bootstrap/scss/bootstrap";
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
