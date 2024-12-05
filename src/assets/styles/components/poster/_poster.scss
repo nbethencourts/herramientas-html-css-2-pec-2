@@ -1,4 +1,5 @@
 .container-main {
+  padding: 1rem 0;
   container-type: inline-size;
   container-name: poster;
 }
@@ -46,10 +47,10 @@
   .poster {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr;
-    grid-template-rows: 28vh 18vh 13vh 13vh 18vh 10vh;
+    grid-template-rows: 26vh 16vh 11vh 11vh 16vh;
     @container poster (max-width: #{$width-1}) {
       grid-template-columns: 50vw 50vw;
-      grid-template-rows: 15vh 20vh 15vh 20vh 15vh auto;
+      grid-template-rows: 15vh 20vh 15vh 20vh auto;
     }
   }
   .poster__titulo1 {
@@ -110,6 +111,7 @@
     display: block;
     @container poster (max-width: #{$width-1}) {
       padding-top: 8px;
+      margin-top: 8px;
       grid-column: 2 / 3;
       grid-row: 6 / 7;
       max-width: 60%;
