@@ -18,6 +18,7 @@
           <div class="form-floating mb-3">
             <input
               type="text"
+              name="nombre"
               class="form-control"
               placeholder="Nombre"
               aria-label="Nombre"
@@ -31,6 +32,7 @@
           <div class="form-floating mb-3">
             <input
               type="text"
+              name="apellidos"
               class="form-control"
               placeholder="Apellidos"
               id="apellidos"
@@ -48,6 +50,7 @@
           <div class="form-floating mb-3">
             <input
               type="email"
+              name="correo"
               class="form-control"
               id="correo"
               placeholder="nombre@uoc.org"
@@ -62,7 +65,12 @@
       <div class="row g-3">
         <div class="col">
           <div class="form-floating mb-3">
-            <select class="form-select" id="personal" aria-label="Personal">
+            <select
+              class="form-select"
+              id="personal"
+              aria-label="Personal"
+              name="personal"
+            >
               <option selected value="estudiante">Estudiante</option>
               <option value="docente">Docente</option>
               <option value="externo">Externo</option>
@@ -79,6 +87,7 @@
           <div class="form-floating mb-3">
             <textarea
               class="form-control"
+              name="comentarios"
               placeholder="Deja un comentario"
               id="comentarios"
               style="height: 100px"
@@ -95,9 +104,11 @@
           <div class="form-check">
             <input
               class="form-check-input"
+              name="terminos"
               type="checkbox"
               value=""
               id="terminos"
+              required
             />
             <label class="form-check-label" for="terminos">
               He leído y acepto los <a href="#">términos y condiciones</a> y la
