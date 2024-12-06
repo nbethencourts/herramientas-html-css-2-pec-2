@@ -11,10 +11,10 @@ $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
 
-$width-1: 640px;
-$width-2: 768px;
-$width-3: 1024px;
-$width-4: 1280px;
+$width-1: 540px;
+$width-2: 720px;
+$width-3: 960px;
+$width-4: 1140px;
 
 $dark-color: #142338;
 $action-color: #00daff;
@@ -23,13 +23,4 @@ $primary-text-emphasis: #ffffff;
 $theme-colors: (
   "primary": #00daff,
   "light": #ffffff,
-  "dark": green,
 );
-
-// $container-max-widths: (
-//   sm: 540px,
-//   md: 720px,
-//   lg: 720px,
-//   xl: 720px,
-//   xxl: 720px,
-// );
