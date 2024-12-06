@@ -28,6 +28,9 @@
     --action-color: #00daff;
     --font-family: "Roboto", sans-serif;
   }
+  // .btn-primary {
+  //   --bs-btn-color: #ffffff;
+  // }
 }
 @layer layouts {
   body {
@@ -53,7 +56,8 @@
     border-top: 2px solid var(--action-color);
     border-bottom: 2px solid var(--action-color);
   }
-  ul {
+  .poster__actividades ul,
+  .poster__programa ul {
     font-size: 1.2rem;
     li {
       border: 1px solid var(--secondary-color);
@@ -64,5 +68,8 @@
         background-color: var(--light-secondary-color);
       }
     }
+  }
+  .poster__programa ul li {
+    border-radius: 4px;
   }
 }
