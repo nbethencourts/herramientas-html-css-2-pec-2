@@ -1,0 +1,12 @@
+.containerparticipantes {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header,
+.footer {
+  flex-shrink: 0;
+}
+.containerflex {
+  flex-grow: 1;
+}
