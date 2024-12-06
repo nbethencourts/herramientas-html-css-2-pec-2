@@ -1,0 +1,26 @@
+.maincontacto {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header,
+.footer {
+  flex-shrink: 0;
+}
+.containerflex {
+  flex-grow: 1;
+}
+.container-contacto {
+  container-type: inline-size;
+  container-name: container-contacto;
+}
+.contactform,
+.ubicacion,
+.mapa {
+  width: $width-2;
+  padding: 2rem;
+  margin: 0 auto;
+  @container container-contacto (max-width: #{$width-2}) {
+    width: 100%;
+  }
+}
