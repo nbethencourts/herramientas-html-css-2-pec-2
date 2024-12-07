@@ -18,18 +18,22 @@
 .ubicacion,
 .mapa {
   width: $width-2;
-  padding: 2rem;
+  padding: 2cqw;
   margin: 0 auto;
   @container container-contacto (max-width: #{$width-2}) {
     width: 100cqw;
   }
 }
 .contactform {
-  background: color(display-p3 0.21 0.29 0.46);
+  background: #0a3d89;
+  background: color(display-p3 0.01 0.18 0.55);
   color: rgba(33, 37, 41, 0.65);
+  border-radius: 6px;
   a {
+    color: #eb3daf;
     color: color(display-p3 1 0.38 0.8);
     text-decoration: none;
+    border-bottom: 1px dotted #eb3daf;
     border-bottom: 1px dotted color(display-p3 1 0.38 0.8);
     &:hover {
       color: $secondary-strong;
