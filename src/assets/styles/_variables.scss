@@ -1,3 +1,5 @@
+@use "sass:color";
+
 //Definición de breakpoints
 $width-1: 540px;
 $width-2: 720px;
@@ -16,6 +18,7 @@ $primary-color: #0c1220;
 
 //Variables que sobreescriben las variables de Bootstrap
 $primary-text-emphasis: #ffffff;
+$card-border-width: none;
 $theme-colors: (
   "primary": #00daff,
   "light": #ffffff,
