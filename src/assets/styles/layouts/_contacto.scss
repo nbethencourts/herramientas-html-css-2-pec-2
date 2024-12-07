@@ -36,8 +36,8 @@
     border-bottom: 1px dotted #eb3daf;
     border-bottom: 1px dotted color(display-p3 1 0.38 0.8);
     &:hover {
-      color: $secondary-strong;
-      border-bottom: 1px dotted $secondary-strong;
+      color: $accent-color;
+      border-bottom: 1px dotted $accent-color;
     }
   }
   label.form-check-label {
