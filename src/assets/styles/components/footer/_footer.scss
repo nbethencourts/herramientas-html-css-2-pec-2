@@ -4,8 +4,6 @@
   justify-content: space-between;
   padding: 1rem;
   margin-top: 1rem;
-  font-size: 13px;
-  color: white;
   background-color: $dark-color;
 }
 .footer__img {
@@ -50,9 +48,12 @@
   display: inline-block;
 }
 .footer__paginas {
-  color: white;
+  color: $primary-text-emphasis;
   text-decoration: none;
+  font-weight: bold;
   &:hover {
-    opacity: 0.7;
+    opacity: 0.9;
+    color: $accent-color;
+    border-bottom: 2px solid $accent-color;
   }
 }
