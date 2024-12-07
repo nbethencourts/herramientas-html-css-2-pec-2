@@ -9,6 +9,7 @@
 
 @import "variables";
 // @import "components/poster/poster";
+
 @import "components/footer/footer";
 // @import "components/header/header";
 @import "components/imagefluid/imagefluid";
@@ -28,7 +29,7 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
-
+@import "layouts/base";
 @import "layouts/home";
 @import "layouts/prensa";
 @import "layouts/participantes";
