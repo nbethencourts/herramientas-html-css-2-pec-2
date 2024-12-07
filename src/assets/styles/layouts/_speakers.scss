@@ -1,9 +1,13 @@
 @import "../variables";
-// @layer speakers {
-//   body {
-//     background-color: green;
-//   }
-// }
+@layer speakers {
+  .card {
+    transition-property: background-color;
+    transition-duration: 0.4s;
+    &:hover {
+      background-color: $light-secondary-color;
+    }
+  }
+}
 .containerspeakers {
   display: flex;
   flex-direction: column;
