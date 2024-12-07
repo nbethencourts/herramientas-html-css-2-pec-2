@@ -1,42 +1,14 @@
-@layer reset,
-  default,
-  bootstrap, 
-  themes,
-  layouts,
-  components,
-  utilities;
-
-@layer reset {
-  * {
-    box-sizing: border-box;
-  }
-}
-@layer default {
-  body {
-    height: 100vh;
-    margin: 0;
-  }
-}
 @layer bootstrap {
   @import "bootstrap/scss/bootstrap";
 }
-@layer themes {
-  :root {
-    --primary-color: #0c1220;
-    --secondary-color: #ffcc62;
-    --light-secondary-color: #fae4b5;
-    --action-color: #00daff;
-    --font-family: "Roboto", sans-serif;
-  }
-  // .btn-primary {
-  //   --bs-btn-color: #ffffff;
-  // }
-}
+
 @layer layouts {
   body {
-    background-color: var(--primary-color);
-    font-family: var(--font-family);
+    background-color: $primary-color;
+    font-family: $font-stack;
     color: #ffffff;
+    height: 100vh;
+    margin: 0;
   }
 }
 @layer components {
@@ -45,7 +17,7 @@
 }
 @layer utilities {
   header {
-    background-color: var(--primary-color);
+    background-color: $primary-color;
   }
   .poster__logo {
     background-color: #ffffff;
@@ -53,19 +25,19 @@
   .poster__lugar-fechas {
     font-size: 1.3rem;
     padding: 1.5rem 0.2rem;
-    border-top: 2px solid var(--action-color);
-    border-bottom: 2px solid var(--action-color);
+    border-top: 2px solid $action-color;
+    border-bottom: 2px solid $action-color;
   }
   .poster__actividades ul,
   .poster__programa ul {
     font-size: 1.2rem;
     li {
-      border: 1px solid var(--secondary-color);
-      background-color: var(--secondary-color);
+      border: 1px solid $accent-color;
+      background-color: $accent-color;
       transition-property: background-color;
       transition-duration: 0.4s;
       &:hover {
-        background-color: var(--light-secondary-color);
+        background-color: $light-secondary-color;
       }
     }
   }
