@@ -1,16 +1,20 @@
+//Definición de breakpoints
 $width-1: 540px;
 $width-2: 720px;
 $width-3: 960px;
 $width-4: 1140px;
 
+// Fuentes
 $font-stack: "Roboto", sans-serif;
 
+// Variables de color
 $dark-color: #142338;
 $action-color: #00daff;
 $accent-color: #ffcc62;
 $light-secondary-color: #fae4b5;
 $primary-color: #0c1220;
 
+//Variables que sobreescriben las variables de Bootstrap
 $primary-text-emphasis: #ffffff;
 $theme-colors: (
   "primary": #00daff,

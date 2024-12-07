@@ -1,8 +1,5 @@
-@layer bootstrap {
-  @import "bootstrap/scss/bootstrap";
-}
-
-@layer layouts {
+@import "../variables";
+@layer home {
   body {
     background-color: $primary-color;
     font-family: $font-stack;
@@ -10,12 +7,6 @@
     height: 100vh;
     margin: 0;
   }
-}
-@layer components {
-  @import "../components/poster/poster";
-  @import "../components/header/header";
-}
-@layer utilities {
   header {
     background-color: $primary-color;
   }
