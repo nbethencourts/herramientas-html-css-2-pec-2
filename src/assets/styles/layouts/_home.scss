@@ -15,13 +15,13 @@
   }
   .poster__lugar-fechas {
     font-size: 1.3rem;
-    padding: 1.5rem 0.2rem;
     border-top: 2px solid $action-color;
     border-bottom: 2px solid $action-color;
   }
   .poster__actividades ul,
   .poster__programa ul {
     font-size: 1.2rem;
+    padding: 0;
     li {
       border: 1px solid $accent-color;
       background-color: $accent-color;
