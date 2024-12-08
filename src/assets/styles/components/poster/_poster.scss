@@ -4,15 +4,15 @@
   container-name: poster;
 }
 .poster__titulo1 {
-  width: 10%;
   float: left;
+  width: 10%;
+  padding: 4px;
   text-align: right;
   border-right: 4px solid $action-color;
-  padding: 4px;
 }
 .poster__titulo2 {
-  width: 88%;
   float: left;
+  width: 88%;
   padding: 4px;
 }
 .poster__lugar-fechas {
@@ -22,23 +22,23 @@
   padding-left: 10%;
 }
 .poster__cartel {
-  padding-left: 10%;
-  max-width: 70%;
   float: left;
+  max-width: 70%;
+  padding-left: 10%;
 }
 .poster__logo {
   float: right;
   width: 19%;
 }
 .poster__actividades {
-  margin-top: 20px;
   float: right;
   width: 19%;
+  margin-top: 20px;
 }
 .poster__programa {
-  margin-top: 20px;
   display: inline-block;
   width: 100%;
+  margin-top: 20px;
 }
 .poster__list {
   justify-content: space-around;
@@ -46,107 +46,107 @@
 @supports (display: grid) {
   .poster {
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr;
     grid-template-rows: 26vh 16vh 11vh 11vh 16vh;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr;
     @container poster (max-width: #{$width-2}) {
-      grid-template-columns: 50vw 50vw;
       grid-template-rows: 15vh 20vh 15vh 20vh auto;
+      grid-template-columns: 50vw 50vw;
     }
   }
   .poster__titulo1 {
-    grid-column: 1 / 2;
     grid-row: 1 / 2;
+    grid-column: 1 / 2;
     justify-self: end;
     width: initial;
     @container poster (max-width: #{$width-2}) {
-      grid-column: 1 / 2;
       grid-row: 1 / 2;
+      grid-column: 1 / 2;
     }
   }
   .poster__titulo2 {
-    grid-column: 2 / 3;
     grid-row: 1 / 2;
+    grid-column: 2 / 3;
     @container poster (max-width: #{$width-2}) {
-      grid-column: 2 / 3;
       grid-row: 1 / 2;
+      grid-column: 2 / 3;
     }
   }
   .poster__lugar-fechas {
-    grid-column: 1 / 3;
     grid-row: 3 / 4;
+    grid-column: 1 / 3;
     align-self: center;
-    text-align: center;
     padding: 1.5rem 0.2rem;
+    text-align: center;
     @container poster (max-width: #{$width-2}) {
-      grid-column: 1 / 2;
       grid-row: 2 / 3;
+      grid-column: 1 / 2;
     }
     @container poster (min-width: #{$width-2}) and (max-width: #{$width-3}) {
       padding: 0.3rem;
     }
   }
   .poster__inscripcion {
-    grid-column: 2 / 3;
     grid-row: 4 / 5;
-    justify-self: center;
+    grid-column: 2 / 3;
     align-self: center;
+    justify-self: center;
     padding: 0;
     @container poster (max-width: #{$width-2}) {
-      grid-column: 2 / 3;
       grid-row: 2 / 3;
+      grid-column: 2 / 3;
     }
   }
   .poster__cartel {
-    grid-column: 3 / 6;
     grid-row: 1 / 4;
+    grid-column: 3 / 6;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
     max-width: 100%;
+    height: 100%;
     padding: 0;
+    object-fit: contain;
     @container poster (max-width: #{$width-2}) {
-      grid-column: 1 / 3;
       grid-row: 3 / 5;
+      grid-column: 1 / 3;
     }
   }
   .poster__logo {
-    grid-column: 6 / 7;
-    grid-row: 1 / 2;
-    max-width: 100%;
-    width: 100%;
     display: block;
+    grid-row: 1 / 2;
+    grid-column: 6 / 7;
+    width: 100%;
+    max-width: 100%;
     @container poster (max-width: #{$width-2}) {
+      grid-row: 6 / 7;
+      grid-column: 2 / 3;
+      justify-self: center;
+      max-width: 60%;
       padding-top: 8px;
       margin-top: 8px;
-      grid-column: 2 / 3;
-      grid-row: 6 / 7;
-      max-width: 60%;
-      justify-self: center;
     }
   }
   .poster__actividades {
-    padding: 8px;
-    grid-column: 6 / 7;
     grid-row: 2 / 4;
+    grid-column: 6 / 7;
     width: 100%;
+    padding: 8px;
     margin: 0;
     @container poster (max-width: #{$width-2}) {
-      grid-column: 1 / 2;
       grid-row: 6 / 7;
+      grid-column: 1 / 2;
       margin-bottom: 20px;
     }
   }
   .poster__programa {
-    grid-column: 2 / 6;
     grid-row: 5 / 6;
+    grid-column: 2 / 6;
     align-self: center;
     @container poster (max-width: #{$width-2}) {
-      grid-column: 1 / 3;
       grid-row: 5 / 6;
+      grid-column: 1 / 3;
     }
     @container poster (min-width: #{$width-2}) and (max-width: #{$width-3}) {
-      grid-column: 2 / 7;
       grid-row: 5 / 6;
+      grid-column: 2 / 7;
     }
   }
 }
