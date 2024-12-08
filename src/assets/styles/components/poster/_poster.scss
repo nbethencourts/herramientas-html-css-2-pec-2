@@ -1,4 +1,4 @@
-.container-main {
+.poster {
   padding: 1rem 0;
   container-type: inline-size;
   container-name: poster;
@@ -44,7 +44,7 @@
   justify-content: space-around;
 }
 @supports (display: grid) {
-  .poster {
+  .poster__grid {
     display: grid;
     grid-template-rows: 26vh 16vh 11vh 11vh 16vh;
     grid-template-columns: 1fr 3fr 3fr 3fr 3fr 3fr;
