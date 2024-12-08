@@ -34,3 +34,8 @@
     border-bottom: none;
   }
 }
+@media (max-width: $width-1) {
+  a {
+    font-size: 0.8rem;
+  }
+}

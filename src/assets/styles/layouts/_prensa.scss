@@ -33,16 +33,19 @@
 }
 .destacado-1 {
   @container container-prensa (max-width: #{$width-1}) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 .destacado-2 {
   @container container-prensa (max-width: #{$width-1}) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 blockquote:has(cite) {
   border-left: 4px solid #ffc107;
   padding-left: 1rem;
+  @container container-prensa (max-width: #{$width-1}) {
+    font-size: 1.1rem;
+  }
 }
